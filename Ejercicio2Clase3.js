@@ -24,6 +24,7 @@ if (verificar === nombres[h]){
   resultado = true;
 } else {
   resultado = false;
+  break; // con este break, lo que hacemos es que se detenga la busqueda s elo encontro, ayuda a optimizar recursos y tiempo.
 }
 }if (resultado){
   console.log ("El nombre SI esta en la lista.");
