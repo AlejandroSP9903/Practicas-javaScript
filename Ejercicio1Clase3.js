@@ -10,6 +10,10 @@ for (let i = 1; i <= cantidad; i++) {
   let nombre = prompt('Ingrese el nombre ' + i);
   nombres.push(nombre);
 }
-for (let k = 0; k <= cantidad; k++){
+// CORRECCION; puse "k <= cantidad" eso va imprimir un objeto de la lista extra que no existe
+// correccion "k < cantidad."
+for (let k = 0; k < cantidad; k++){
 console.log(nombres[k]);
 }
+
+// Para "cantidad" es mejor usar en su lugar "nombres.length", ya que con esto nos da la catidad de elementos del arreglo.
