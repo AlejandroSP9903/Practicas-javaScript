@@ -2,7 +2,7 @@
 Luego, guarda cada nombre en un arreglo.
 Al final, imprime todos los nombres usando un ciclo.
 */
-let cantidad = Number(propt('¿Cuantos nombres vas a ingresar?'));
+let cantidad = Number(prompt('¿Cuantos nombres vas a ingresar?'));
 let nombres = [];
 for (let i = 1; i <= cantidad; i++) {
   //Para solicitar una cadena de texto no es necesario poner "String" fuera de de los () y antes del prompt
