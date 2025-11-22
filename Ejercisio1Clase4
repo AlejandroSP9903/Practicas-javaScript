@@ -1,0 +1,30 @@
+/*Crear una función que busque un elemento dentro de un arreglo.
+Lo que debes hacer;
+Pídele al usuario cuántos elementos quiere ingresar.
+Llena el arreglo usando un ciclo.
+Pídele al usuario un valor para buscar.
+Crea una función buscarElemento(arreglo, valor) que:
+Recorra el arreglo
+Revise si el valor existe
+Retorne "Encontrado" o "No encontrado"
+Llama la función y muestra el resultado en console.log.
+
+*/
+
+let cantidad = prompt("¿Cuantas frutas quieres agregar?");
+let frutas =[];
+for (let i = 1; i <= cantidad; i++){
+  let fruta = prompt("Agrege la fruta " + i + ".");
+  frutas.push  (fruta);
+}
+let verificar = prompt("Ingrese la fruta que desea buscar.")
+
+function buscarFruta (frutas, verificar){
+for (let g = 0; g < frutas.length; g++){
+if (verificar === frutas[g]){
+  return "Se encontro.";
+    } 
+  }return "No se encontro.";
+}
+let respuesta = buscarFruta (frutas, verificar);
+console.log(respuesta);
