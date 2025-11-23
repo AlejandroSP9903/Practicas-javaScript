@@ -1,0 +1,30 @@
+function procesarNombre (callback){
+  let dato = prompt("Ingresa tu nombre.");
+  return callback (dato);
+}
+
+function invertirNombre (text){
+  let dividir = text.split("");
+  let invertir = dividir.reverse();
+  let unir = invertir.join("");
+  return unir; 
+}
+
+function contarLetras (text){
+  return text.length;
+}
+
+
+function capitalizar (text){
+  let primera = text.charAt(0).toUpperCase();
+  let resto = text.slice(1);
+  return primera + resto;
+}
+let invert = procesarNombre(invertirNombre);
+console.log("El nombre invertido es: " + invert);
+
+let contador = procesarNombre(contarLetras);
+console.log("La cantidad de letras que tiene tu nombre es: " + contador);
+
+let cap = procesarNombre(capitalizar);
+console.log ("El nombre capitalizado es: " + cap);
