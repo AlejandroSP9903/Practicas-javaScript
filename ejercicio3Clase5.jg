@@ -1,0 +1,42 @@
+//VOY A PRACTICAR FUNCIONES PARA INTERIORISARLAS; JUNTO CON ALGUNOS CALL BACKS;
+
+// EJERCICIO 1
+
+function multiplicar ( a, b, callback){
+  let multi = a * b;
+  callback(multi);
+}
+multiplicar( 2, 5, mostrar);
+
+// EJERCICIO 2
+
+function procesarTexto(texto, callback){
+let palabra = prompt("Escriba la palabra a revisar; " );
+  return callback(palabra);
+}
+function aMayus (text, callback){
+  let mayuscula = text.toUpperCase();
+  callback(mayuscula);
+}
+function contarText (testo, callback){
+   let contador = testo.length;
+  callback ( contador);
+}
+
+let textoContadoyEnMayus = procesarTexto(aMay
+
+// EJERCICIO 3
+
+let datos = prompt("Agrega el texto a contar.");
+function contador (text){
+  return text.length;
+}
+function  mayus (text){
+  return text.toUpperCase();
+}
+
+let response1 = mayus(datos);
+console.log ("El texto a mayusculas es: " + response1);
+
+let response2 = contador(datos);
+console.log ("El texto tiene " + response2 + " letras.");
