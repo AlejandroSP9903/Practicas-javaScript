@@ -38,5 +38,36 @@ function  mayus (text){
 let response1 = mayus(datos);
 console.log ("El texto a mayusculas es: " + response1);
 
+// EJERCICIO 4
+let dato = Number (prompt ("Ingresa el numero a procesar."));
+
+function porTres (num){
+  return num * 3;
+}
+
+function esONoEs (num, verificar){
+  if (num < 0){
+    verificar = true;
+  } else {
+    verificar = false;
+  }
+  return verificar;
+}
+
+function absoluto (num){
+  if (num < 0){
+    num = num - num - num;
+  }
+  return num;
+}
+let multiplicar = porTres(dato);
+console.log ("El numero multiplicado por 3 es: " + dato + " x " + " 3 " + " = " + multiplicar + ".")
+
+let negativoPositivo = esONoEs(dato)
+console.log ("¿Es negativo? " + negativoPositivo);
+
+let elAbsoluto = absoluto(dato);
+console.log ("El absoluto del numero proporcionado es: " + elAbsoluto);
+
 let response2 = contador(datos);
 console.log ("El texto tiene " + response2 + " letras.");
