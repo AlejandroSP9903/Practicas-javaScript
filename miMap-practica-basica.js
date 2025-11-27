@@ -24,6 +24,9 @@ function miMap (array, callback){
   return (totalArray); 
 }
 
+
+//EN ESTE CASO DEBIA USAR ALGO MAS SIMPLE Y CLARO, EN VES DE USAR "n - n - n" SE PUEDE USAR ALGO MAS SIMPLE QUE SERIA "0 - n = -n" O INCLUSO "return -n;" SOLO n CON EL SIMBOLO RESTAR.
+
 let resultado1 = miMap(numeros, function(n){
   return n - n - n
 });
