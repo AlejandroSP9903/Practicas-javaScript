@@ -4,7 +4,6 @@ y transformación usando programación funcional. El resultado final muestra sol
 multiplicados por 3.
 */
 
-
 let numeros = [2, 3, 5, 10, 6, 1, 4, 11, 9];
 
 function miTransformador (array, callbackFiltrado, callbackTransformador){
@@ -19,6 +18,10 @@ function miTransformador (array, callbackFiltrado, callbackTransformador){
     }
   } return nuevoArray;
 }
+
+// AQUI LLAME A ESTA FUNCION "FILTAR" LO CUAL HACE QUE EL CODIGO FUNCIONE SIN EMBARGO PUEDE GENERAR CONFUCIONES SI ALGUIEN MAS QUIERE TRABAJAR SOBRE MI CODIGO
+// NOTA: ES MUY IMPORTANTE PONERLE EL NOMBRE CORRECTO A LAS FUNCIONES ESTO ME AYUDARA A EVITAR QUE EN UN FUTURO PONGA NOMBRES INAPROPIADOS Y SEA DIFICIL IDENTIFICAR ERRORES,
+// MODIFICAR O AGREGAR CODIGO SOBRE MI TRABAJO SI NO LO HICE BIEN DESDE EL INICIO.
 
 function filtrar (num){
   return num > 4;
