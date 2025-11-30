@@ -13,7 +13,7 @@ let arrayNumeros = [2, 5, 6, 10, 32, 54, 109, 80, 76, 53, 12, 11];
 function filtrarYProcesar (array, condicionCallback, procesoCallback){
   let nuevoArray = [];
 
-//AQUI ME RECOMIENDAN GUARDAR EL "ARRAY[I]" EN UNA FUNCION PARA HACER EL CODIGO MAS LIMPIO
+//AQUI ME RECOMIENDAN GUARDAR EL "ARRAY[I]" EN UNA VARIABLE PARA HACER EL CODIGO MAS LIMPIO
   
   for ( let i = 0; i < array.length; i++){
     if (condicionCallback(array[i])){
