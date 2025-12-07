@@ -13,7 +13,11 @@ const items = [
   { nombre: "Vino", precio: 42000, stock: 3 }
 ];
 
-let ordenar = items.sort((a,b) => b - a);
+// AQUI OLVIDE COLOCAR EL "b.precio y el a.precio"
+
+let ordenar = items.sort((a,b) => b.precio - a.precio);
+
+// AQUI PODIA USAR ".slice()" YA QUE YA ESTABAN ORDENADOS DE MENOR A MAYOR, SOLO ERA MOSTRAR EL RANGO DE 0-2
 
 let filtrar = ordenar.filter(value => value.precio > 6000);
 
